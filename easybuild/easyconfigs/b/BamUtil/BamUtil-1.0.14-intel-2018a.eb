@@ -5,11 +5,10 @@
 # The Francis Crick Institute
 #
 # This is the version with the bundled libStatGen library
+easyblock = 'MakeCp'
 
 name = 'BamUtil'
 version = '1.0.14'
-
-easyblock = 'MakeCp'
 
 homepage = 'http://genome.sph.umich.edu/wiki/BamUtil'
 description = """BamUtil is a repository that contains several programs
