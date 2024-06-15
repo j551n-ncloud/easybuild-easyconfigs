@@ -1,3 +1,18 @@
+# This file is an EasyBuild reciPY as per https://github.com/easybuilders/easybuild
+#
+# Author: Adam Huffman
+# adam.huffman@crick.ac.uk
+# The Francis Crick Institute
+#
+# Recipe Author: Johannes Nguyen
+# johannes.nguyen@dkfz-heidelberg.de
+# DKFZ Heidelberg
+#
+# This is the version with the bundled libStatGen library
+
+
+easyblock = 'MakeCp'
+
 name = 'BamUtil'
 version = '1.0.15'
 
@@ -21,7 +36,7 @@ sources = [
     },
 ]
 
-dependencies = [('zlib', '1.2.11')]
+
 
 # Ensure the right compilers are used
 buildopts = 'CC="$CC" CXX="$CXX" USER_WARNINGS="" LIB_PATH_BAM_UTIL=%(builddir)s/libStatGen-*/'
@@ -33,6 +48,6 @@ sanity_check_paths = {
     'dirs': [],
 }
 
-easyblock = 'MakeCp'
+
 
 moduleclass = 'bio'
